@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — West Country Malines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-main">West Country</span>
+      <span class="nav-logo-sub">— Malines —</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="breed.html">The Breed</a></li>
+      <li><a href="birds.html">Available Birds</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <p class="section-label light">— Get In Touch —</p>
+    <h1>Contact Us.</h1>
+    <p>We'd love to hear from you.</p>
+  </section>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="section-label">West Country Malines</p>
+      <h2>Let's Talk Birds.</h2>
+      <p>Whether you're ready to reserve chicks, have questions about the breed, want to join the waitlist, or just want to connect — we're happy to hear from you.</p>
+      <p>We are a small family operation and respond to all inquiries personally. Please allow 1–2 business days for a reply.</p>
+
+      <div class="contact-detail">
+        <span>📍 Near Rocky Mountain House, Central Alberta</span>
+        <span>📧 info@westcountrymalines.ca</span>
+        <span>📱 @westcountrymalines on Facebook &amp; Instagram</span>
+      </div>
+
+      <p style="font-size:0.8rem; color:var(--text-light); line-height:1.8;">
+        <strong>Pickup only.</strong> We do not ship live birds. All sales are local pickup near Rocky Mountain House, AB.
+      </p>
+
+      <div style="margin-top:2rem;">
+        <p class="section-label">Follow Our Journey</p>
+        <div style="display:flex; gap:1rem; margin-top:0.5rem;">
+          <a href="https://facebook.com/westcountrymalines" target="_blank" class="btn btn-dark" style="font-size:0.65rem; padding:0.6rem 1.2rem;">Facebook</a>
+          <a href="https://instagram.com/westcountrymalines" target="_blank" class="btn btn-dark" style="font-size:0.65rem; padding:0.6rem 1.2rem;">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <p class="section-label">Send a Message</p>
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="(403) 555-0000" />
+        </div>
+        <div class="form-group">
+          <label for="interest">I'm interested in...</label>
+          <select id="interest" name="interest">
+            <option value="">Select one</option>
+            <option value="chicks">Day-Old Chicks — Reserve a spot</option>
+            <option value="waitlist">Joining the Waitlist</option>
+            <option value="breeding">Breeding Stock</option>
+            <option value="general">General Question</option>
+            <option value="hello">Just saying hello</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what you're looking for, how many birds, any questions about the breed..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center;">Send Message →</button>
+        <p class="form-note">We respond personally to every message. Allow 1–2 business days.</p>
+      </form>
+      <div id="formSuccess" style="display:none; padding:2rem; text-align:center;">
+        <p style="font-family:var(--font-display); font-size:1.4rem; color:var(--navy); margin-bottom:0.5rem;">Thank you!</p>
+        <p style="color:var(--text-light); font-size:0.9rem;">We've received your message and will be in touch within 1–2 business days.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo-main">West Country Malines</p>
+        <p class="footer-tagline-small">Slow-Grown. Proper Birds.</p>
+        <p class="footer-est">Est. 2026 — Rocky Mountain House, Alberta</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="story.html">Our Story</a>
+        <a href="breed.html">The Breed</a>
+        <a href="birds.html">Available Birds</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <p>Follow Our Journey</p>
+        <div class="footer-social-links">
+          <a href="https://facebook.com/westcountrymalines" target="_blank">Facebook</a>
+          <span>·</span>
+          <a href="https://instagram.com/westcountrymalines" target="_blank">Instagram</a>
+        </div>
+        <p class="footer-handle">@westcountrymalines</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 West Country Malines · Near Rocky Mountain House, Central Alberta · <a href="contact.html">Contact Us</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
